@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "name": "Debug (system tools)",
+            "externalConsole": true,
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/picoprobe.cfg",
+                "target/rp2040.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/pico-sdk/src/rp2040/hardware_regs/rp2040.svd"
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "name": "Debug (toolchains folder)",
+            "externalConsole": true,
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "serverpath": "${workspaceFolder}/toolchains/openocd/src/openocd",
+            "configFiles": [
+                "interface/picoprobe.cfg",
+                "target/rp2040.cfg"
+            ],
+            "searchDir": [
+                "${workspaceFolder}/toolchains/openocd/tcl"
+            ],
+            "armToolchainPath": "${workspaceFolder}/toolchains/gcc-arm-none-eabi-10.3-2021.10/bin",
+            "svdFile": "${workspaceFolder}/pico-sdk/src/rp2040/hardware_regs/rp2040.svd"
+        },
+    ]
+}

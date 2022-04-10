@@ -1,0 +1,5 @@
+build
+toolchains/**
+!toolchains/*.cmake
+pico-sdk
+.vscode/.cortex-debug.*

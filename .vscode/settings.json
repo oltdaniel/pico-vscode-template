@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true,
+    "cmake.buildBeforeRun": true,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "cmake.configureOnOpen": false,
+    "cortex-debug.variableUseNaturalFormat": true,
+    // "cortex-debug.openocdPath.linux": "${workspaceFolder}/toolchains/openocd/src/openocd",
+    // "cortex-debug.openocdPath.osx": "${workspaceFolder}/toolchains/openocd/src/openocd",
+    // "cortex-debug.openocdPath.windows": "${workspaceFolder}/toolchains/openocd/src/openocd.exe",
+}
